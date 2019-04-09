@@ -6,6 +6,8 @@
     <groupId>com.luocx</groupId>
     <artifactId>eureka-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
     <name>eureka-server</name>
     <description>Demo project for Spring Boot</description>
 
@@ -13,7 +15,7 @@
         <groupId>com.luocx</groupId>
         <artifactId>spring-cloud-eureka</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath/>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <dependencies>

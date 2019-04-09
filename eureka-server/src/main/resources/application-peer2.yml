@@ -1,0 +1,20 @@
+server:
+  port: 8762
+spring:
+  application:
+    name: eureka-server
+  profiles:
+    active: peer2
+eureka:
+  instance:
+    hostname: peer2
+  client:
+#   表示是否注册自身到eureka服务器
+#    register-with-eureka: false
+#   是否从eureka上获取注册信息
+#    fetch-registry: false
+    service-url:
+      default-zone: http://peer1:8761/eureka/
+
+#修改host 添加 127.0.0.1 peer1和peer2
+#启动类自己加个peer2的
