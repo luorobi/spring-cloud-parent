@@ -8,9 +8,13 @@ eureka:
   instance:
     hostname: peer1
   client:
+    #    表示是否注册自身到eureka服务器
+    register-with-eureka: false
+    #    是否从eureka上获取注册信息
+    fetch-registry: false
     serviceUrl:
-      defaultZone: http://peer2:8762/eureka/
-
+      defaultZone: http://peer1:8761/eureka/
+#为了测试方便将peer2:8762改为 peer1:8761
 ---
 server:
   port: 8762
