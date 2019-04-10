@@ -1,5 +1,5 @@
-# spring-cloud-eureka
-服务注册与发现
+# spring-cloud-parent
+微服务整合
 
 2yml-server为双yml配置模式  
 simple-server为普通模式  
