@@ -3,7 +3,6 @@ package com.luocx.eurekaribbonclient.controller;
 import com.luocx.eurekaribbonclient.service.RibbonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -19,6 +18,7 @@ public class RibbonController {
     @Autowired
     RibbonService ribbonService;
 
+    //实现轮询服务实例信息
     @Autowired
     private LoadBalancerClient loadBalancer;
 
