@@ -13,7 +13,7 @@
 
     <parent>
         <groupId>com.luocx</groupId>
-        <artifactId>spring-cloud-eureka</artifactId>
+        <artifactId>spring-cloud-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
